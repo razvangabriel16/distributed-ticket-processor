@@ -1,6 +1,8 @@
+<p align="left">
+  <img src="logo.png" width="80"/>
+</p>
 
-# Collaborative Ticket Orchestration & Resolution Engine
----
+<h1 align="left">Collaborative Ticket Orchestration & Resolution Engine</h1>
 Un sistem complex de gestionare a tichetelor scris in Java (bazat pe principii OOP), conceput pentru coordonarea 
 workflow-urilor de dezvoltare software în echipe distribuite. Platforma orchestrează ciclul complet de viață al problemelor:
 de la raportarea inițială a bug-urilor și cererilor de funcționalități până la rezolvarea bazată pe milestone-uri și evaluarea 
@@ -87,3 +89,4 @@ din componente modulare (reutilizabile) in cazul comenzii de cautare cu filtre. 
 TICKET / DEV, interfața `Specification<T>` este generică si dispune de metode helper default (operatii logice in vederea construirea 
 query-urilor complexe prin composability: OR, AND, NOT) si  `boolean isSatisfiedBy(T item)`. Pentru verificarea filtrului de 
 `Keywords` folosim operatorul OR pentru a verifica existenta macar a unui keyword, peste care se aplica operatorul AND ca la celelalte.
+
