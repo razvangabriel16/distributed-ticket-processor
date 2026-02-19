@@ -3,6 +3,7 @@
 </p>
 
 <h1 align="left">Collaborative Ticket Orchestration & Resolution Engine</h1>
+
 Un sistem complex de gestionare a tichetelor scris in Java (bazat pe principii OOP), conceput pentru coordonarea 
 workflow-urilor de dezvoltare software în echipe distribuite. Platforma orchestrează ciclul complet de viață al problemelor:
 de la raportarea inițială a bug-urilor și cererilor de funcționalități până la rezolvarea bazată pe milestone-uri și evaluarea 
@@ -18,8 +19,7 @@ automată când prioritatea depășește nivelul de senioritate.
 rapoarte complexe de performanță și stabilitate. Are vizibilitate completă asupra tuturor tichetelor din sistem și poate efectua
 căutări avansate multi-criteriu.
 
-Dinamica analizei se desfașoară in mai multe faze: faza de _**testare**_, faza de _**soluționare**_ și faza de _
-**concluzii & raportare**_ astfel:
+Dinamica analizei se desfașoară in mai multe faze: faza de _**testare**_, faza de _**soluționare**_ și faza de _**concluzii & raportare**_ astfel:
 1. **Testing (FIXED TIME WINDOW - 12 days)** -> Reporterii raportează probleme identificate pe baza feedback-ului clienților 
 și testării interne. Developerii nu pot rezolva tichete, iar managerii nu pot crea milestone-uri în această perioadă.
 2. **Solutioning** -> Managerii creează milestone-uri cu alocări de echipă și dependențe între ele. Developerii preiau tichete 
@@ -89,4 +89,5 @@ din componente modulare (reutilizabile) in cazul comenzii de cautare cu filtre. 
 TICKET / DEV, interfața `Specification<T>` este generică si dispune de metode helper default (operatii logice in vederea construirea 
 query-urilor complexe prin composability: OR, AND, NOT) si  `boolean isSatisfiedBy(T item)`. Pentru verificarea filtrului de 
 `Keywords` folosim operatorul OR pentru a verifica existenta macar a unui keyword, peste care se aplica operatorul AND ca la celelalte.
+
 
